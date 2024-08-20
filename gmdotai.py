@@ -171,3 +171,6 @@ with open('query.txt', 'r') as file:
         auth_data = line.strip()
         if auth_data:
             process_account(auth_data)
+            print("All accounts processed. Starting 1440-min countdown.")
+    countdown_one_hour()
+    main()
